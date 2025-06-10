@@ -70,6 +70,7 @@
         margin-top: 1rem;
     }
   }
+
   
 /* Section 2: Banner */
   .banner {
@@ -136,7 +137,12 @@
         flex-direction: column;
         align-items: center;
     }
-    
+
+    .banner-image {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+
     .banner-image .image-placeholder {
         width: 100%;
         height: auto;
@@ -151,7 +157,7 @@
         font-size: 1.5rem;
         margin: 20px 0;
     }
-  }
+}
   
 /* Section 3: Our Client */
   .clients-section {
@@ -341,21 +347,25 @@
     font-size: 0.9rem;
   }
   
-  /* Responsive: one stat per row */
-  @media (max-width: 768px) {
+  /*Mobile Responsive */
+@media (max-width: 768px) {
     .helping-blockchain {
-        flex-direction: column;
-        align-items: center;
-      }
-  
+            flex-direction: column;
+            align-items: center;
+    }
+
     .intro h2 {
-      font-size: 1.5rem;
+            font-size: 1.5rem;
     }
-  
+
     .intro p {
-      font-size: 0.9rem;
+            font-size: 0.9rem;
     }
-  }
+
+    .stats-grid {
+            grid-template-columns: 1fr;
+    }
+}
 
 /* Section 6: Blockchain Future */
       .container {
@@ -388,7 +398,6 @@
           gap: 30px;
       }
       
-      /* Individual Card */
       .card {
           flex: 1 1 300px;
           background-color: white;
@@ -400,7 +409,6 @@
           z-index: 1;
       }
       
-      /* Card Hover Effects */
       .card:hover {
           transform: translateY(-10px) scale(1.02);
           box-shadow: 0 15px 30px rgba(0,0,0,0.15);
@@ -466,7 +474,6 @@
           line-height: 1.4;
       }
       
-      /* Read More Link */
       .read-more {
           display: inline-block;
           color: #3949ab;
@@ -501,7 +508,9 @@
               flex: 1 1 100%;
               max-width: 100%;
           }
-      }
+      } 
+
+
 
 /* Section 7: Contact Us */
 
